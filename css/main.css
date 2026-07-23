@@ -89,24 +89,15 @@ details[open] > summary::before{
 =              COMPOSANTS ENQUÊTE                  =
 ==================================================*/
 
-.plainte,
-.audition,
-.preuve,
-.investigation{
-
+.plainte,.audition,.preuve,.investigation{
     background:#273449;
-
     border:1px solid #334155;
-
     border-radius:20px;
-
     margin:10px 0;
-
     overflow:hidden;
-
 }
 
-.plainte[open], .audition[open], .preuve[open], .investigation[open]{
+.plainte[open],.audition[open],.preuve[open],.investigation[open]{
     padding:10px;
 }
 

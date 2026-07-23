@@ -1,195 +1,93 @@
 /*==================================================
-=                  VARIABLES                        =
+=              ENQUÊTES - LAYOUT                   =
 ==================================================*/
 
-#app {
+.header{
 
-    /* Couleurs */
+    background:linear-gradient(
+        135deg,
+        #1E3A5F,
+        #20252b
+    );
 
-    --zz-bg: #191b28;
-    --zz-ov: #232638;
-    --zz-card: #20252b;
-    --zz-card-alt: #273449;
+    border:1px solid #334155;
 
-    --zz-fg: #7981ac;
-    --zz-text: #ffffff;
-    --zz-text-muted: #b8c0d8;
+    border-radius:20px;
 
-    --zz-border: #334155;
+    padding:20px;
 
-    --zz-danger: #ef4444;
-    --zz-success: #22c55e;
-    --zz-warning: #eab308;
-    --zz-info: #3b82f6;
+    text-align:center;
 
-    /* Couleurs métier */
+    margin:20px 10px;
 
-    --zz-proof: #89B4FA;
-    --zz-hearing: #A6D189;
-    --zz-investigation: #E5C07B;
-    --zz-complaint: #7AA2F7;
-
-    /* Espacements */
-
-    --zz-space-xs: .25rem;
-    --zz-space-sm: .5rem;
-    --zz-space-md: 1rem;
-    --zz-space-lg: 1.5rem;
-    --zz-space-xl: 2rem;
-
-    /* Arrondis */
-
-    --zz-radius-sm: 6px;
-    --zz-radius-md: 12px;
-    --zz-radius-lg: 20px;
-
-    /* Animations */
-
-    --zz-speed: .2s;
 }
-
-.sec-html:has(.lspd){
-    --zz-bg:#191b28;
-    --zz-ov:#232638;
-    --zz-card:#20252b;
-    --zz-card-alt:#273449;
-    --zz-fg:#7981ac;
-    --zz-border:#334155;
-    --zz-proof:#89B4FA;
-    --zz-hearing:#A6D189;
-    --zz-investigation:#E5C07B;
-    --zz-complaint:#7AA2F7;
-}
-
-/*==================================================
-=                     LAYOUT                        =
-==================================================*/
-
-/* Cartes */
 
 .card{
-    background:var(--zz-card);
-    border:1px solid var(--zz-border);
-    border-radius:var(--zz-radius-lg);
-    padding:var(--zz-space-xl);
-    margin:var(--zz-space-xl) .5rem;
+
+    background:#20252b;
+
+    border:1px solid #2f363d;
+
+    border-radius:20px;
+
+    padding:20px;
+
+    margin:20px 10px;
+
 }
-
-/* Carte d'en-tête */
-
-.header-card{
-    background:
-        linear-gradient(
-            135deg,
-            color-mix(in srgb,var(--zz-fg) 35%,black),
-            var(--zz-bg)
-        );
-    border:1px solid var(--zz-border);
-    border-radius:var(--zz-radius-lg);
-    padding:var(--zz-space-xl);
-    margin:var(--zz-space-xl) .5rem;
-    text-align:center;
-}
-
-/* Titres */
 
 .card-title{
+
     text-align:center;
-    margin-top:0;
-    color:var(--zz-text);
+
 }
 
-/* Pied de carte */
+.verdict{
 
-.card-footer{
-    margin-top:var(--zz-space-xl);
-    padding-top:var(--zz-space-md);
-    border-top:1px solid var(--zz-border);
+    border-left:4px solid #EF4444;
+
+    background:#25202a;
+
 }
 
 /*==================================================
-=                  ACCORDÉONS                      =
+=                    SUMMARY                       =
 ==================================================*/
 
-/* Accordéon générique */
+summary{
 
-.accordion{
-    background:var(--zz-card-alt);
-    border:1px solid var(--zz-border);
-    border-radius:var(--zz-radius-lg);
-    margin:var(--zz-space-md) 0;
-    overflow:hidden;
-    transition:
-        border-color var(--zz-speed),
-        background var(--zz-speed);
-}
-
-.accordion[open]{
-    padding:var(--zz-space-md);
-}
-
-.accordion>summary{
     cursor:pointer;
-    padding:var(--zz-space-md);
+
     font-weight:600;
+
+    padding:12px 15px;
+
     list-style:none;
-    color:var(--zz-accent);
-    transition:color var(--zz-speed);
+
+    transition:.2s;
+
 }
 
-.accordion>summary::-webkit-details-marker{
+summary::-webkit-details-marker{
+
     display:none;
+
 }
 
-.accordion>summary::before{
+summary::before{
+
     content:"▶";
+
     display:inline-block;
-    margin-right:.5rem;
-    transition:transform var(--zz-speed);
+
+    margin-right:8px;
+
+    transition:.2s;
+
 }
 
-.accordion[open]>summary::before{
+details[open] > summary::before{
+
     transform:rotate(90deg);
-}
 
-.accordion:hover{
-    border-color:var(--zz-accent);
-}
-
-/*==================================================
-=                VARIANTES                         =
-==================================================*/
-
-.plainte{
-    --zz-accent:var(--zz-complaint);
-}
-
-.preuve{
-    --zz-accent:var(--zz-proof);
-}
-
-.audition{
-    --zz-accent:var(--zz-hearing);
-}
-
-.investigation{
-    --zz-accent:var(--zz-investigation);
-}
-
-.category{
-    margin:0;
-    padding:0;
-    border:none;
-    background:none;
-}
-
-.category>summary{
-    font-size:1.35rem;
-    font-weight:700;
-    color:var(--zz-fg);
-    padding:var(--zz-space-md);
-}
-
-.category>summary::before{
-    content:"";
 }

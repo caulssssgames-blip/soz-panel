@@ -1,4 +1,6 @@
 @import "theme.css";
+@import "fullscreen.css";
+@import "summary.css";
 
 .sec-html {
   position: relative;

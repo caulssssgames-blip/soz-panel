@@ -1,1 +1,108 @@
+/*==================================================
+=                  VARIABLES                        =
+==================================================*/
 
+#app {
+
+    /* Couleurs */
+
+    --zz-bg: #191b28;
+    --zz-ov: #232638;
+    --zz-card: #20252b;
+    --zz-card-alt: #273449;
+
+    --zz-fg: #7981ac;
+    --zz-text: #ffffff;
+    --zz-text-muted: #b8c0d8;
+
+    --zz-border: #334155;
+
+    --zz-danger: #ef4444;
+    --zz-success: #22c55e;
+    --zz-warning: #eab308;
+    --zz-info: #3b82f6;
+
+    /* Couleurs métier */
+
+    --zz-proof: #89B4FA;
+    --zz-hearing: #A6D189;
+    --zz-investigation: #E5C07B;
+    --zz-complaint: #7AA2F7;
+
+    /* Espacements */
+
+    --zz-space-xs: .25rem;
+    --zz-space-sm: .5rem;
+    --zz-space-md: 1rem;
+    --zz-space-lg: 1.5rem;
+    --zz-space-xl: 2rem;
+
+    /* Arrondis */
+
+    --zz-radius-sm: 6px;
+    --zz-radius-md: 12px;
+    --zz-radius-lg: 20px;
+
+    /* Animations */
+
+    --zz-speed: .2s;
+}
+
+.sec-html:has(.lspd){
+    --zz-bg:#191b28;
+    --zz-ov:#232638;
+    --zz-card:#20252b;
+    --zz-card-alt:#273449;
+    --zz-fg:#7981ac;
+    --zz-border:#334155;
+    --zz-proof:#89B4FA;
+    --zz-hearing:#A6D189;
+    --zz-investigation:#E5C07B;
+    --zz-complaint:#7AA2F7;
+}
+
+/*==================================================
+=                     LAYOUT                        =
+==================================================*/
+
+/* Cartes */
+
+.card{
+    background:var(--zz-card);
+    border:1px solid var(--zz-border);
+    border-radius:var(--zz-radius-lg);
+    padding:var(--zz-space-xl);
+    margin:var(--zz-space-xl) .5rem;
+}
+
+/* Carte d'en-tête */
+
+.header-card{
+    background:
+        linear-gradient(
+            135deg,
+            color-mix(in srgb,var(--zz-fg) 35%,black),
+            var(--zz-bg)
+        );
+    border:1px solid var(--zz-border);
+    border-radius:var(--zz-radius-lg);
+    padding:var(--zz-space-xl);
+    margin:var(--zz-space-xl) .5rem;
+    text-align:center;
+}
+
+/* Titres */
+
+.card-title{
+    text-align:center;
+    margin-top:0;
+    color:var(--zz-text);
+}
+
+/* Pied de carte */
+
+.card-footer{
+    margin-top:var(--zz-space-xl);
+    padding-top:var(--zz-space-md);
+    border-top:1px solid var(--zz-border);
+}

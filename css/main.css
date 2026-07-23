@@ -106,3 +106,90 @@
     padding-top:var(--zz-space-md);
     border-top:1px solid var(--zz-border);
 }
+
+/*==================================================
+=                  ACCORDÉONS                      =
+==================================================*/
+
+/* Accordéon générique */
+
+.accordion{
+    background:var(--zz-card-alt);
+    border:1px solid var(--zz-border);
+    border-radius:var(--zz-radius-lg);
+    margin:var(--zz-space-md) 0;
+    overflow:hidden;
+    transition:
+        border-color var(--zz-speed),
+        background var(--zz-speed);
+}
+
+.accordion[open]{
+    padding:var(--zz-space-md);
+}
+
+.accordion>summary{
+    cursor:pointer;
+    padding:var(--zz-space-md);
+    font-weight:600;
+    list-style:none;
+    color:var(--zz-accent);
+    transition:color var(--zz-speed);
+}
+
+.accordion>summary::-webkit-details-marker{
+    display:none;
+}
+
+.accordion>summary::before{
+    content:"▶";
+    display:inline-block;
+    margin-right:.5rem;
+    transition:transform var(--zz-speed);
+}
+
+.accordion[open]>summary::before{
+    transform:rotate(90deg);
+}
+
+.accordion:hover{
+    border-color:var(--zz-accent);
+}
+
+/*==================================================
+=                VARIANTES                         =
+==================================================*/
+
+.plainte{
+    --zz-accent:var(--zz-complaint);
+}
+
+.preuve{
+    --zz-accent:var(--zz-proof);
+}
+
+.audition{
+    --zz-accent:var(--zz-hearing);
+}
+
+.investigation{
+    --zz-accent:var(--zz-investigation);
+}
+
+.category{
+    margin:0;
+    padding:0;
+    border:none;
+    background:none;
+}
+
+.category>summary{
+    font-size:1.35rem;
+    font-weight:700;
+    color:var(--zz-fg);
+    padding:var(--zz-space-md);
+}
+
+.category>summary::before{
+    content:"";
+}

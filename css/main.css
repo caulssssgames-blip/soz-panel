@@ -60,7 +60,7 @@ details[open] > summary::before{
 }
 
 /*==================================================
-=                 CARD DETAILS                     =
+=                 CATEGORY                    =
 ==================================================*/
 
 .category{
@@ -82,4 +82,58 @@ details[open] > summary::before{
 
 .category > summary:hover{
     color:#93C5FD;
+}
+
+
+/*==================================================
+=              COMPOSANTS ENQUÊTE                  =
+==================================================*/
+
+.plainte,
+.audition,
+.preuve,
+.investigation{
+
+    background:#273449;
+
+    border:1px solid #334155;
+
+    border-radius:20px;
+
+    margin:10px 0;
+
+    overflow:hidden;
+
+}
+
+.plainte[open], .audition[open], .preuve[open], .investigation[open]{
+    padding:10px;
+}
+
+.preuve > summary{
+    color:#89B4FA;
+}
+
+.preuve:hover{
+    border-color:#89B4FA;
+}
+
+.audition > summary{
+    color:#A6D189;
+}
+
+.audition:hover{
+    border-color:#A6D189;
+}
+
+.investigation > summary{
+    color:#E5C07B;
+}
+
+.investigation:hover{
+    border-color:#E5C07B;
+}
+
+.plainte:hover{
+    border-color:#7AA2F7;
 }

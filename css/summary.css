@@ -61,3 +61,7 @@
   color: var(--zz-fg);
   font-size: 1.5em;
 }
+
+body{
+    outline:10px solid red !important;
+}

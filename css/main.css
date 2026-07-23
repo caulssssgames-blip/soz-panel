@@ -3,51 +3,33 @@
 ==================================================*/
 
 .header{
-
     background:linear-gradient(
         135deg,
         #1E3A5F,
         #20252b
     );
-
     border:1px solid #334155;
-
     border-radius:20px;
-
     padding:20px;
-
     text-align:center;
-
     margin:20px 10px;
-
 }
 
 .card{
-
     background:#20252b;
-
     border:1px solid #2f363d;
-
     border-radius:20px;
-
     padding:20px;
-
     margin:20px 10px;
-
 }
 
 .card-title{
-
     text-align:center;
-
 }
 
 .verdict{
-
     border-left:4px solid #EF4444;
-
     background:#25202a;
-
 }
 
 /*==================================================
@@ -55,39 +37,49 @@
 ==================================================*/
 
 summary{
-
     cursor:pointer;
-
     font-weight:600;
-
     padding:12px 15px;
-
     list-style:none;
-
     transition:.2s;
-
 }
 
 summary::-webkit-details-marker{
-
     display:none;
-
 }
 
 summary::before{
-
     content:"▶";
-
     display:inline-block;
-
     margin-right:8px;
-
     transition:.2s;
-
 }
 
 details[open] > summary::before{
-
     transform:rotate(90deg);
+}
 
+/*==================================================
+=                 CARD DETAILS                     =
+==================================================*/
+
+.category{
+    background:none;
+    border:none;
+    margin:0;
+    padding:0 !important;
+}
+
+.category > summary{
+    color:#7981ac;
+    font-size:1.4em;
+    padding:10px;
+}
+
+.category > summary::before{
+    content:none;
+}
+
+.category > summary:hover{
+    color:#93C5FD;
 }

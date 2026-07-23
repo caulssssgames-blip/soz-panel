@@ -82,11 +82,7 @@
 ==================================================*/
 
 .header{
-    background:linear-gradient(
-        135deg,
-        #1E3A5F,
-        #20252b
-    );
+    background:var(--zz-header);
     border:1px solid #334155;
     border-radius:20px;
     padding:20px;
@@ -95,7 +91,7 @@
 }
 
 .card{
-    background:#20252b;
+    background:var(--zz-ov);
     border:1px solid #2f363d;
     border-radius:20px;
     padding:20px;
@@ -150,7 +146,7 @@ details[open] > summary::before{
 }
 
 .category > summary{
-    color:#7981ac;
+    color:var(--zz-fg);
     font-size:1.4em;
     padding:10px;
 }
@@ -160,7 +156,7 @@ details[open] > summary::before{
 }
 
 .category > summary:hover{
-    color:#93C5FD;
+    color:var(--zz-category-hover);
 }
 
 
@@ -172,7 +168,7 @@ details[open] > summary::before{
 .audition,
 .preuve,
 .investigation{
-    background:#273449;
+    background:var(--zz-subcategories);
     border:1px solid #334155;
     border-radius:20px;
     margin:10px 0;

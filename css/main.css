@@ -187,7 +187,7 @@ details[open] > summary::before{
 }
 
 .preuve:hover{
-    border-color:#89B4FA;
+    color:var(--zz-category-hover);
 }
 
 .audition > summary{

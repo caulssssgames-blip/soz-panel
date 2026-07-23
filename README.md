@@ -1,2 +1,2 @@
-# soz-panel test
+# soz-panel
 test
